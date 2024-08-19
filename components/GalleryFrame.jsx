@@ -37,7 +37,6 @@ function GalleryFrame({ posts }) {
             w="100%"
             maxW="900px"
             mx="auto"
-            bg="gray.800"
             sx={{ columnCount: [1, 2, 3], columnGap: "8px" }}
         >
             {posts.map((src, index) => (
