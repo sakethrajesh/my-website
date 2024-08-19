@@ -29,6 +29,27 @@ export async function getBlogPosts(queries = []) {
     return result;
 }
 
+export async function getBlogPost(docId) {
+    const result = await databases.getDocument(
+        'my-site-db',
+        'blog',
+        docId,
+    );
+
+    const response = await fetch(result.blog_file)
+    if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response}`);
+    }
+
+    const fileContents = await response.text();
+
+    return {
+        title: result.title,
+        date: result.date,
+        content: fileContents,
+    };
+}
+
 export async function getGalleryPosts() {
     const result = await databases.listDocuments(
         'my-site-db',
