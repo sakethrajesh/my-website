@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import { TableContainer, Table, Thead, Tr, Th, Tbody, Td, Tfoot, TableCaption } from '@chakra-ui/react'
+import { Skeleton, TableContainer, Table, Thead, Tr, Th, Tbody, Td, Tfoot, TableCaption } from '@chakra-ui/react'
 import { useRouter } from 'next/navigation'
 import { getBlogPosts } from '../app/lib/data'
 
@@ -24,9 +24,15 @@ function BlogTable() {
     }, []);
 
     return (
+      <Skeleton
+        height='75px'
+        isLoaded={ blogs.length > 0 }
+        fadeDuration={1}
+      >
+     
         <TableContainer mt='5'>
             <Table variant='simple'>
-                <TableCaption>Pondering</TableCaption>
+                <TableCaption>Just Some Thoughts to Ponder</TableCaption>
                 <Tbody>
                     {blogs.map((blog) => {
                         if (blog.publish) {
@@ -43,6 +49,7 @@ function BlogTable() {
                 </Tbody>
             </Table>
         </TableContainer>
+        </Skeleton>
     )
 }
 
