@@ -1,15 +1,15 @@
-import { Divider } from '@nextui-org/react'
-import BlogTable from '@/components/BlogTable'
 import React from 'react'
+import { Heading, Divider } from '@chakra-ui/react'
+import BlogTable from '@/components/BlogTable'
 
-function Blog() {
+function page() {
   return (
-    <>
-        <h1 className='text-4xl font-bold pt-7'>Blog</h1>
-        <Divider className="my-4" />
+    <div>
+        <Heading mt='10' >Blog</Heading>
+        <Divider mt='1' />
         <BlogTable />
-    </>
+    </div>
   )
 }
 
-export default Blog
+export default page

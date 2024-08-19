@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { NextUIProvider } from '@nextui-org/react'
-import Nav from '@/components/Navbar'
+import { Providers } from "./providers";
+import Navbar from "@/components/Navbar";
+import { Heading, Box } from "@chakra-ui/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,13 +18,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className='dark'>
-      <NextUIProvider>
-        <body className='max-w-3xl mx-auto'>
-          <Nav />
+    <html lang="en">
+      <body>
+        <Providers>
+          <Box maxW="3xl" mx="auto" px="5" mt="5">
+          <Heading size='lg' as='i'>Saketh Rajesh</Heading>
+          <Navbar />
           {children}
-        </body>
-      </NextUIProvider>
+          </Box>
+          </Providers>
+      </body>
     </html>
   );
 }
