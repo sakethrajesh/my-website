@@ -30,6 +30,11 @@ export default function RootLayout({
             <Navbar />
             {children}
           </Box>
+          <Box maxW="3xl" mx="auto" px="5" my="5" alignItems="end">
+            <Flex justifyContent="center" alignItems="bottom" w="100%">
+              <Heading size='sm' as='i'>© 2024 Saketh Rajesh</Heading>
+            </Flex>
+          </Box>
         </Providers>
       </body>
     </html>
