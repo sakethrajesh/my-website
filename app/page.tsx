@@ -3,6 +3,7 @@ import React from 'react'
 import { UnorderedList, ListItem, Flex, Box, Divider, Heading, Text, Button, Stack } from '@chakra-ui/react'
 import { FaLinkedin, FaGithub, FaGithubAlt } from 'react-icons/fa'
 import { Link } from '@chakra-ui/next-js'
+import RecentBlogs from '@/components/RecentBlogs'
 
 export default function Home() {
   return (
@@ -23,25 +24,23 @@ export default function Home() {
         <Box flex="1" w={["100%", "100%", "100%"]} pr="4">
           <Heading size="lg" mt="10">My Interests</Heading>
           <Divider mt="1" />
-          <UnorderedList spacing={1} styleType="'- '">
-            <ListItem>Item 1</ListItem>
-            <ListItem>Item 2</ListItem>
-            <ListItem>Item 3</ListItem>
-            <ListItem>Item 4</ListItem>
+          <UnorderedList spacing={1}>
+            <ListItem>Distributed Systems</ListItem>
+            <ListItem>Machine Learning</ListItem>
+            <ListItem>Autonomous Vehicles</ListItem>
           </UnorderedList>
         </Box>
-        <Box flex="1" w={["100%", "100%", "100%"]} pl="4">
-          <Heading size="lg" mt="10">Recent Blogs</Heading>
-          <Divider mt="1" />
-        </Box>
+        <RecentBlogs />
       </Flex>
 
       <Heading size="lg" mt="10">Contact Me</Heading>
       <Divider mt="1" />
 
       <Text mt="2">
+        I&apos;m always open to new opportunities and collaborations.
+      </Text>
+      <Text mb="2">
         Feel free to reach out to me at <Link href="mailto:saketh@vt.edu">saketh@vt.edu</Link>.
-        I&apos;m always open to new opportunities and collaborations!
       </Text>
 
       <Stack direction='row' spacing={4} align='center' justifyContent='left' wrap='wrap' mt="2">

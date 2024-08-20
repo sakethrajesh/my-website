@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Providers>
-          <Box maxW="3xl" mx="auto" px="5" mt="5">
+          <Box maxW="3xl" mx="auto" px="5" my="5">
             <Flex justifyContent="space-between" alignItems="center" w="100%">
               <Heading size='lg' as='i'>Saketh Rajesh</Heading>
               <ColorModeToggle />
@@ -30,11 +30,11 @@ export default function RootLayout({
             <Navbar />
             {children}
           </Box>
-          <Box maxW="3xl" mx="auto" px="5" my="5" alignItems="end">
+          {/* <Box maxW="3xl" mx="auto" px="5" my="5" alignItems="end">
             <Flex justifyContent="center" alignItems="bottom" w="100%">
               <Heading size='sm' as='i'>© 2024 Saketh Rajesh</Heading>
             </Flex>
-          </Box>
+          </Box> */}
         </Providers>
       </body>
     </html>
