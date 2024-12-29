@@ -5,6 +5,7 @@ import { Providers } from "./providers";
 import Navbar from "@/components/Navbar";
 import { Heading, Box, Flex } from "@chakra-ui/react";
 import ColorModeToggle from "@/components/ColorModeToggle";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Providers>
+          <SpeedInsights />
           <Box maxW="3xl" mx="auto" px="5" my="5">
             <Flex justifyContent="space-between" alignItems="center" w="100%">
               <Heading size='lg' as='i'>Saketh Rajesh</Heading>

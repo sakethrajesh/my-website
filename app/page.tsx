@@ -24,7 +24,7 @@ export default function Home() {
         <Box flex="1" w={["100%", "100%", "100%"]} pr="4">
           <Heading size="lg" mt="10">My Interests</Heading>
           <Divider mt="1" />
-          <UnorderedList spacing={1}>
+          <UnorderedList mt="1" spacing={1}>
             <ListItem>Distributed Systems</ListItem>
             <ListItem>Machine Learning</ListItem>
             <ListItem>Autonomous Vehicles</ListItem>

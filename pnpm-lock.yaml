@@ -17,6 +17,9 @@ dependencies:
   '@emotion/styled':
     specifier: ^11.13.0
     version: 11.13.0(@emotion/react@11.13.0)(@types/react@18.0.0)(react@19.0.0-rc-1eaccd82-20240816)
+  '@vercel/speed-insights':
+    specifier: ^1.1.0
+    version: 1.1.0(next@15.0.0-rc.0)(react@19.0.0-rc-1eaccd82-20240816)
   appwrite:
     specifier: ^15.0.0
     version: 15.0.0
@@ -1937,6 +1940,34 @@ packages:
 
   /@ungap/structured-clone@1.2.0:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
+    dev: false
+
+  /@vercel/speed-insights@1.1.0(next@15.0.0-rc.0)(react@19.0.0-rc-1eaccd82-20240816):
+    resolution: {integrity: sha512-rAXxuhhO4mlRGC9noa5F7HLMtGg8YF1zAN6Pjd1Ny4pII4cerhtwSG4vympbCl+pWkH7nBS9kVXRD4FAn54dlg==}
+    requiresBuild: true
+    peerDependencies:
+      '@sveltejs/kit': ^1 || ^2
+      next: '>= 13'
+      react: ^18 || ^19 || ^19.0.0-rc
+      svelte: '>= 4'
+      vue: ^3
+      vue-router: ^4
+    peerDependenciesMeta:
+      '@sveltejs/kit':
+        optional: true
+      next:
+        optional: true
+      react:
+        optional: true
+      svelte:
+        optional: true
+      vue:
+        optional: true
+      vue-router:
+        optional: true
+    dependencies:
+      next: 15.0.0-rc.0(react-dom@19.0.0-rc-1eaccd82-20240816)(react@19.0.0-rc-1eaccd82-20240816)
+      react: 19.0.0-rc-1eaccd82-20240816
     dev: false
 
   /@zag-js/dom-query@0.16.0:
