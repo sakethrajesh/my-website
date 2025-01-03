@@ -25,6 +25,11 @@ function Navbar() {
             href: '/blog',
             isActive: false
         },
+        {
+            label: 'Resume',
+            href: '/SakethRajeshResume_2025.pdf',
+            isActive: false
+        },
     ]
     return (
         <Stack direction='row' spacing={4} align='center' justifyContent='left' wrap='wrap' >
