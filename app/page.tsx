@@ -14,7 +14,7 @@ export default function Home() {
         I&apos;m a software engineer who loves tackling new challenges. I like coding, basketball, and photography.
       </Text>
       <Text mt="4">
-        Currently, I&apos;m pursuing a Master&apos;s in Computer Science at Virginia Tech and conducting research on path planning algorithms for self-driving cars.
+        Currently, I&apos;m pursuing a Master&apos;s in Computer Science at Virginia Tech and conducting research on self-driving cars and computer science education.
       </Text>
       <Text mt="4">
         I&apos;ve had the opportunity to intern at Aurora (self-driving unicorn start up), IBM, and Peraton, where I&apos;ve contributed to a diverse range of products, including Operating Systems, Data Streaming Platforms, Machine Learning Pipelines, and Web Applications.
