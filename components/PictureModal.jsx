@@ -11,27 +11,27 @@ export default function PictureModal({ isOpen, onOpen, onClose, imageInfo }) {
             <ModalContent>
                 <ModalHeader>{imageInfo.caption}</ModalHeader>
                 <ModalCloseButton />
-                <ModalBody>
+                <ModalBody className="h-screen flex items-center justify-center">
                     {isMobile ? (
-                        <VStack spacing='24px'>
-                            <Image src={imageInfo.href} alt={imageInfo.title} width="100%"/>
-                            <Box>
-                                <p>Image Description</p>
-                                <p>Image Description</p>
-                                <p>Image Description</p>
-                                <p>Image Description</p>
-                            </Box>
-                        </VStack>
+                            <Image src={imageInfo.href} alt={imageInfo.title} />
+                        // <VStack spacing='24px'>
+                        //     <Box>
+                        //         <p>Image Description</p>
+                        //         <p>Image Description</p>
+                        //         <p>Image Description</p>
+                        //         <p>Image Description</p>
+                        //     </Box>
+                        // </VStack>
                     ) : (
-                        <HStack spacing='24px'>
-                            <Image src={imageInfo.href} alt={imageInfo.title} width="60%"/>
-                            <Box>
-                                <p>Image Description</p>
-                                <p>Image Description</p>
-                                <p>Image Description</p>
-                                <p>Image Description</p>
-                            </Box>
-                        </HStack>
+                            <Image src={imageInfo.href} alt={imageInfo.title} />
+                        // <HStack spacing='24px'>
+                        //     <Box>
+                        //         <p>Image Description</p>
+                        //         <p>Image Description</p>
+                        //         <p>Image Description</p>
+                        //         <p>Image Description</p>
+                        //     </Box>
+                        // </HStack>
                     )}
                 </ModalBody>
 

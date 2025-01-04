@@ -27,7 +27,7 @@ function Navbar() {
         },
         {
             label: 'Resume',
-            href: '/SakethRajeshResume_2025.pdf',
+            href: '/Saketh_Rajesh_Resume.pdf',
             isActive: false
         },
     ]

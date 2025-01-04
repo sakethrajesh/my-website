@@ -9,7 +9,7 @@ export default async function projectsPage() {
             description: 'Leading the development of high-level autonomous capabilities for the 2023 Cadillac LYRIQ in the EcoCar EV Challenge. This includes features like auto lane change, eco-adaptive cruise control, and vehicle-to-vehicle communication. The project utilizes motion planning, perception, and a ROS2-based software stack to interface with the CAN bus for vehicle control, running on a custom compute platform with a React-based web interface for monitoring and control.',
             comp_link: 'https://avtcseries.org/about-the-ecocar-ev-challenge/',
             team_link: 'https://www.linkedin.com/company/hevt/about/',
-            image: 'hevt.png',
+            image: 'project_images/hevt.png',
             tags: ['Python', 'ROS2', 'CAN protocol', 'Docker', 'C++', 'React', 'socket (TCP/IP) programming', 'VPN']
         },
     ]
@@ -21,7 +21,7 @@ export default async function projectsPage() {
             description: "Led the development of an interactive conversational assistant to simplify agricultural insurance decisions. Built using a Large Language Model (LLM) trained on Rainfall Index Insurance Standards and USDA data, the assistant offers clear, personalized guidance and visualizations. The project includes a user-friendly chat interface, a Flask API backend, and deployment on Virginia Tech's Endeavour cluster, showcasing the power of AI in demystifying complex insurance options.",
             link: 'https://vtechworks.lib.vt.edu/items/032f9fcd-05ca-487e-8c67-01b4b0f2ef76',
             code_link: 'https://github.com/sakethrajesh/AgInsuranceLLM',
-            image: 'aginsllm.webp',
+            image: 'project_images/aginsllm.webp',
             tags: ['React', 'NextJS', 'Python', 'Flask', 'Redis', 'ChromaDB (Vector Database)', 'Docker', 'Kubernetes', 'LLM', 'Retrieval Augmented Generation', 'llama2', 'Ollama', 'gpt-4']
         },
     ]
@@ -34,7 +34,7 @@ export default async function projectsPage() {
             winner: true,
             link: 'https://devpost.com/software/project-6ufisdb5k719',
             code_link: 'https://github.com/KeshavBhadauria-VT/HackViolet2023',
-            image: '/powerdown.jpg',
+            image: 'project_images//powerdown.jpg',
             tags: ['React', 'Python', 'Flask', 'NoSQL DB', 'Firebase', 'Google Cloud Platform', 'Typescript']
         },
         {
@@ -44,7 +44,7 @@ export default async function projectsPage() {
             winner: false,
             link: 'https://devpost.com/software/the-narator',
             code_link: 'https://github.com/KeshavBhadauria-VT/hoohacks2023',
-            image: 'narrator.png',
+            image: 'project_images/narrator.png',
             tags: ['OpenAI Dalle Model', 'React', 'Python', 'Flask', 'MongoDB', 'Firebase', 'Google Cloud Platform', 'Typescript']
         },
         {
@@ -54,7 +54,7 @@ export default async function projectsPage() {
             winner: true,
             link: 'https://devpost.com/software/food-snap-q6apl5',
             code_link: 'https://github.com/sakethrajesh/FoodSnap',
-            image: '/foodsnap.webp',
+            image: 'project_images//foodsnap.webp',
             tags: ['React', 'Node.js', 'Express', 'MongoDB', 'Heroku']
         },
         {
@@ -64,7 +64,7 @@ export default async function projectsPage() {
             winner: true,
             link: 'https://devpost.com/software/application_stack',
             code_link: '',
-            image: 'https://i.imgur.com/0Y1Z0Y1.png',
+            image: 'project_images/app_stack.png',
             tags: ['React', 'Node.js', 'Express', 'MongoDB', 'Heroku']
         },
     ]
@@ -74,7 +74,7 @@ export default async function projectsPage() {
             name: 'Youtube Q-A Chatbot Chrome Extension',
             description: 'Created a Chrome extension that lets users ask questions about YouTube videos in real-time. It uses a Retrieval-Augmented Generation (RAG) model to answer with evidence and timestamps from the video.',
             code_link: 'https://github.com/sakethrajesh/Youtube-Q-A-Chatbot',
-            image: '/qallm.png',
+            image: 'project_images//qallm.png',
             tags: ['React', 'Flask', 'llama3.1', 'Redis', 'Docker', 'Python']
         },
     ]
